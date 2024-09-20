@@ -1,0 +1,92 @@
+/* Navbar background and layout */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    width: 100%;
+    height: 100px;
+    z-index: 20;
+    position: relative;
+  }
+  
+  /* Logo styles */
+  .logo h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .logo p {
+    margin-top: -10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Navigation links styles */
+  .NavLinksDiv{
+    margin-right: 50px;
+    width: 50%;
+    height: 100%;
+    background-color: #007BFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  .nav-links {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly ;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    background-color: transparent; /* Transparent background for default state */
+  }
+  
+  /* Active link with white background and blue text */
+  .nav-links li a.active {
+    background-color: #fff;
+    color: #007bff;
+  }
+  
+  /* Default link hover effect */
+  .nav-links li a:hover {
+    color: #f0f4fc;
+    background-color: rgba(255, 255, 255, 0.2); /* Slight hover effect */
+  }
+
+
+
+  @media (max-width:920px) {
+    .NavLinksDiv{
+      padding: 20px;
+      margin-right: 0px;
+      width: auto;
+      height: 200px;
+      align-self: baseline;
+    }
+    .nav-links{
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+  }
+
+
+  @media (max-width:390px) {
+    .navbar{
+      flex-direction: column;
+    }
+    .NavLinksDiv{
+      align-self: center;
+    }
+    
+  }

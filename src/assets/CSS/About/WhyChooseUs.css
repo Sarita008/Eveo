@@ -1,0 +1,71 @@
+.why-choose-us {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  .why-choose-us-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .why-choose-us-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .point-number {
+    font-size: 4rem;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .point-text {
+    text-align: left;
+  }
+  
+  .point-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .point-description {
+    font-size: 1rem;
+    color: #555;
+    max-width: 500px;
+  }
+  
+  /* Ensuring that odd numbers go to the left column and even numbers go to the right column */
+  .why-choose-us-point:nth-child(odd) {
+    grid-column: 1; /* Left column */
+  }
+  
+  .why-choose-us-point:nth-child(even) {
+    grid-column: 2; /* Right column */
+  }
+  
+  /* Making the layout responsive for smaller screens */
+  @media (max-width: 768px) {
+    .why-choose-us-content {
+      grid-template-columns: 1fr; /* Stack in one column on small screens */
+    }
+    .why-choose-us-point {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    .why-choose-us-point:nth-child(even) {
+      grid-column: 1;
+    }
+  }
+  

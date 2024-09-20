@@ -1,0 +1,106 @@
+.jobpage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Heading section */
+  .jobpage-heading h1 {
+    font-family: Lora;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    color: #000000;
+  }
+  
+  /* Cards container */
+  .jobpage-cards {
+    width: 100%;
+    max-width: 1239px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+  }
+  
+  /* Individual card styling */
+  .job-card {
+    width: 90%;
+    min-width: 200px;
+    background-color: #007bff; /* Blue background like in the image */
+    color: white;
+    padding: 5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+  }
+  
+  .job-details {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .detail-item h3 {
+    margin-bottom: 5px;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: left;
+    color: #FFFFFF;
+  }
+  
+  .detail-item p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+
+  }
+  
+  .apply-button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .apply-button {
+    width: 181px;
+    height:71px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    background: #3D00B7;
+    cursor: pointer;
+  }
+
+
+  
+  /* Media Query */
+  @media (max-width:668px) {
+    .jobpage-cards{
+      flex-direction: row;
+    }
+    .job-details{
+      width: fit-content;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .job-card{
+      padding: 20px;
+      width: fit-content;
+    }
+  }

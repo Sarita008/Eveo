@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .stars-container {
+    margin: 0 auto;
+    text-align: center;
+    height: 80vh;
+  }
+  
+  .heading-section {
+    margin-top: 50px;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heading-section h1 {
+    width: 50%;
+    font-size: 50px;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .heading-section p {
+    text-align: left;
+    width: 50%;
+    font-size: 23px;
+    font-weight: 400;
+    color: #757575;
+    margin-top: 10px;
+  }
+  
+  .cards-section {
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    background-color: #007bff;
+    overflow: hidden;
+  }
+  
+  .card {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;  
+  }
+  
+  .card.active {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card .image {
+    position: absolute;
+    top:-50px;
+    left:72px;
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 7px solid white;
+  }
+  .content{
+    position: absolute;
+    bottom: 0;
+    height: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+  }
+  .card .content h2 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .card .content p {
+    font-size: 14px;
+    color: #666;
+  }
+  .circle1Div{
+    z-index: 1;
+    position: absolute;
+    top: 25.5px;
+    left: 0;
+    width: 65px;
+    height: 65px;
+    background-color:white;
+    border-radius: 50%;
+    border-bottom-right-radius:0px ;
+    border-bottom-left-radius:0px ;
+  }
+  .circle3Div{
+    z-index: 0;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color:white;
+    border-radius: 50%;
+    border-bottom-right-radius:0px ;
+    border-bottom-left-radius:0px ;
+    transition: all 0.45s ease;
+  }
+  .circle2Div{
+    z-index: 1;
+    position: absolute;
+    top: 21px;
+    right: 0;
+    width: 65px;
+    height: 65px;
+    background-color:white;
+    border-radius: 50%;
+    border-bottom-right-radius:0px ;
+    border-bottom-left-radius:0px ;
+  }
+  .circle4Div{
+    z-index: 0;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color:white;
+    border-radius: 50%;
+    border-bottom-right-radius:0px ;
+    border-bottom-left-radius:0px ;
+    transition: all 0.45s ease;
+  }
+  .borderDiv{
+    overflow-y: hidden;
+    position: absolute;
+    top: -138px;
+    z-index: 0;
+    left: 22px;
+    margin: 0;
+    width:200px;
+    background-color: #007bff;
+    height: 0px;
+    transition: all 0.3s ease;
+  }
+  .card:hover .borderDiv{
+    height: 200px;
+    border: 50px solid 007bff ;
+    border-radius: 50%;
+  }
+  .card:hover .circle3Div{
+    background-color: #007bff;
+  }
+  .card:hover .circle4Div{
+    background-color: #007bff;
+  }
+
+
+
+  @media (max-width:650px) {
+    .stars-container{
+      height: auto;
+    }
+    .heading-section{
+      flex-direction: column;
+      margin-bottom: 50px;
+      gap: 10px;
+    }
+    .heading-section h1{
+      width: 90%;
+    }
+    .Div{
+      width: 90%;
+    }
+    .Div p{
+      width: 100%;
+    }
+    .cards-section{
+      flex-direction: column;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .card{
+      margin-top: 50px;
+    }
+  }
