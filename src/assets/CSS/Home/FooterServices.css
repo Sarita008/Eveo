@@ -1,0 +1,49 @@
+  .agreement-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .agreement-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .agreement-container h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .agreement-container p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .agreement-container {
+      padding: 15px;
+    }
+  
+    .agreement-container h1 {
+      font-size: 2rem;
+    }
+  
+    .agreement-container h3 {
+      font-size: 1.25rem;
+    }
+  
+    .agreement-container p {
+      font-size: 0.9rem;
+    }
+  }
+  

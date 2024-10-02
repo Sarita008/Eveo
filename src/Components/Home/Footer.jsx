@@ -1,4 +1,6 @@
+// src/components/Footer.js
 import React from 'react';
+import { Link } from 'react-router-dom';  // Import Link for navigation
 import logo from '../../assets/Images/logo.png';
 import '../../assets/CSS/Home/Footer.css'; 
 import { FiSend } from "react-icons/fi";
@@ -13,7 +15,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-content">
         <div className='subFooterDiv1'>
-        <div className="footer-section logo">
+          <div className="footer-section logo">
             <img src={logo}/>
             <p>At Eveo, we are trying to align the fashion according to your preference and under your budget by offering personalized guidance, using AI-AR to transform personality management for events.</p>
           </div>
@@ -25,12 +27,12 @@ const Footer = () => {
           <div className="footer-section-info">
             <h2>Useful Links</h2>
             <ul>
-              <li>About us</li>
-              <li>Services</li>
-              <li>Career</li>
+              <li><Link to="/about">About us</Link></li>
+              <li><Link to="/career">Career</Link></li>
+              <li><Link to="/footerServices">Services</Link></li>
               <li>Policy</li>
-              <li>Refund</li>
-              <li>Terms & Conditions</li>
+              <li><Link to="/refund">Refund</Link></li> {/* Added Link to Refund page */}
+              <li><Link to="/term-and-conditions">Terms & Conditions</Link></li>
             </ul>
           </div>
           <div className="footer-section-info">

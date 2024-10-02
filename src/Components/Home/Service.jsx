@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../assets/CSS/Home/Service.css";  // Include CSS file for styling
+import "../../assets/CSS/Home/Service.css";
 import User from "../../assets/Images/users.png";
 import Userss from "../../assets/Images/Userss.png";
 import Outfit from "../../assets/Images/outfit.png";
@@ -92,7 +92,6 @@ const Service = () => {
             onClick={() => handleCardClick(index)}
           >
             <div className="icon">
-              {/* <FontAwesomeIcon icon={service.icon} size="2x" /> */}
               <img src={service.icon} style={{width: "70%", height:"auto"}} />
             </div>
             <h3>{service.title}</h3>

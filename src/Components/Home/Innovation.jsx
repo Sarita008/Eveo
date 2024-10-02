@@ -11,16 +11,6 @@ import microsoftstartup from "../../assets/Images/Microsoft startup.png";
 import zoho from "../../assets/Images/zoho.png";
 
 const Innovation = () => {
-//   const [positions, setPositions] = useState([
-//     "pos1", "pos2", "pos3", "pos4", "pos5", "pos6", "pos7", "pos8"
-//   ]);
-
-//   const handleCircleClick = () => {
-//     // Rotate the positions of the images in a circle
-//     const newPositions = [...positions];
-//     newPositions.unshift(newPositions.pop()); // Rotating array
-//     setPositions(newPositions);
-//   };
 
 const radius = 300; // Updated radius of the main circle
 const iconSize = 40; // Size of each icon (width and height)
@@ -75,17 +65,6 @@ useEffect(() => {
         </div>
       </div>
 
-      {/* <div className="circle-container" onClick={handleCircleClick}>
-        <div className={`circle-item ${positions[0]}`}><img src={patna} alt="IIT Patna" /></div>
-        <div className={`circle-item ${positions[1]}`}><img src={most} alt="Ministry" /></div>
-        <div className={`circle-item ${positions[2]}`}><img src={iiml} alt="IIML" /></div>
-        <div className={`circle-item ${positions[3]}`}><img src={openai} alt="OpenAI" /></div>
-        <div className={`circle-item ${positions[4]}`}><img src={gtu} alt="GTU" /></div>
-        <div className={`circle-item ${positions[5]}`}><img src={nvidia} alt="Nvidia" /></div>
-        <div className={`circle-item ${positions[6]}`}><img src={meta} alt="Meta" /></div>
-        <div className={`circle-item ${positions[7]}`}><img src={microsoftstartup} alt="Microsoft" /></div>
-        <div className={`circle-item ${positions[8]}`}><img src={zoho} alt="Zoho" /></div>
-      </div> */}
    <div className="container">
       <div className="circle">
         {positions.map((pos, index) => (

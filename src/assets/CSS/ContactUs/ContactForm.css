@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background-image: url("../../Images/vector2.png"); */
     padding: 40px;
     min-height: 100vh;
     gap: 20px;
@@ -55,13 +54,12 @@
   /* Input Fields */
   .form-input {
     width: 100%;
-    padding: 12px 15px;
-    font-size: 18px;
+    padding: 15px;
+    font-size: 16px;
     border: 1px solid #B8B8B8;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    outline: none;
     color: #757575;
+    border-radius: 5px;
+    outline: none;
   }
   .form-input::placeholder{
     color: #757575;
@@ -81,17 +79,22 @@
   }
 
   /* Submit Button */
+  .button{
+    text-align: center;
+  }
+
+
   .submit-btn {
     width: 188px;
     height: 70px;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
+    border-radius: 10px;
     background-color: #007BFF;
     color: #FFFFFF;
     padding: 12px 20px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
   }
 
