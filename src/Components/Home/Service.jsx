@@ -92,7 +92,7 @@ const Service = () => {
             onClick={() => handleCardClick(index)}
           >
             <div className="icon">
-              <img src={service.icon} style={{width: "70%", height:"auto"}} />
+              <img src={service.icon} style={{width: "70%", height:"auto"}} alt="icons" />
             </div>
             <h3>{service.title}</h3>
             <p>{service.description}</p>

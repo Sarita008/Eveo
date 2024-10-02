@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className='subFooterDiv1'>
           <div className="footer-section logo">
-            <img src={logo}/>
+            <img src={logo} alt='logo'/>
             <p>At Eveo, we are trying to align the fashion according to your preference and under your budget by offering personalized guidance, using AI-AR to transform personality management for events.</p>
           </div>
           <div className="footer-section-info">
